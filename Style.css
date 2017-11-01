@@ -1,0 +1,21 @@
+.Part{
+    border: 1px solid black;
+    width:100px;
+    height: 100px;
+    float:left;
+}
+.Hide{
+    display: none;
+}
+#Container{
+    width:300px;
+    height: 400px;
+}
+#intorno{
+	display: block;
+	margin: 0 auto;
+}
+
+#fondo {
+	opacity: 0.3;
+}
