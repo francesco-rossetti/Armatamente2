@@ -582,12 +582,38 @@ a:hover {
 .scrollToTop_wraper {
   opacity: 0 !important;
 }
+#scrollToTop a i:before {
+  content: '';
+  position: absolute;
+  height: 40%;
+  top: 25%;
+  background: #fff;
+  width: 2px;
+  left: calc(50% - 1px);
+}
+#scrollToTop a i:after {
+  content: '';
+  position: absolute;
+  display: block;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 40%;
+  height: 40%;
+  left: 30%;
+  bottom: 30%;
+  transform: rotate(135deg);
+}
 /* Others*/
 .note-check a[data-value=Rubik] {
   font-style: normal;
 }
 .mbr-arrow a {
   color: #ffffff;
+}
+@media (max-width: 767px) {
+  .mbr-arrow {
+    display: none;
+  }
 }
 .form-control-label {
   position: relative;
@@ -1338,9 +1364,7 @@ body {
   min-height: 100vh;
 }
 .cid-qyBpxZCfMZ {
-  padding-top: 135px;
-  padding-bottom: 135px;
-  background-color: #149dcc;
+  background-image: url("../../../assets/images/creativeartswarandpeacepaintingbyjasonedmiston-1257x1156.jpg");
 }
 .cid-qyBr1PMxK4 .navbar {
   padding: .5rem 0;
@@ -1718,6 +1742,17 @@ body {
 .cid-qyBstzZIMv H2 {
   color: #333333;
 }
+.cid-qyBstzZIMv .mbr-header .mbr-header__text {
+  text-align: center;
+  color: #fff;
+}
+.cid-qyBstzZIMv .mbr-header .mbr-header__subtext {
+  text-align: center;
+  color: #fff;
+}
+.cid-qyBstzZIMv .mbr-article {
+  color: #fff;
+}
 .cid-qyBs3AzmPx {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -1772,6 +1807,17 @@ body {
 }
 .cid-qyGg6Aq83L H2 {
   color: #333333;
+}
+.cid-qyGg6Aq83L .mbr-header .mbr-header__text {
+  text-align: center;
+  color: #fff;
+}
+.cid-qyGg6Aq83L .mbr-header .mbr-header__subtext {
+  text-align: center;
+  color: #fff;
+}
+.cid-qyGg6Aq83L .mbr-article {
+  color: #fff;
 }
 .cid-qyGh8JXuGg {
   padding-top: 0px;
@@ -1935,6 +1981,17 @@ body {
 .cid-qyCM2OCx4v .mbr-section-subtitle {
   color: #333333;
   text-align: center;
+}
+.cid-qyCM2OCx4v .mbr-header .mbr-header__text {
+  text-align: center;
+  color: #fff;
+}
+.cid-qyCM2OCx4v .mbr-header .mbr-header__subtext {
+  text-align: center;
+  color: #fff;
+}
+.cid-qyCM2OCx4v .mbr-article {
+  color: #fff;
 }
 .cid-qyCLMp2GCV {
   padding-top: 0px;
@@ -2398,7 +2455,7 @@ body {
     width: 100% !important;
   }
 }
-.cid-qyH0igFthu {
+.cid-qGyjGHXAhW {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #2e2e2e;
@@ -2974,10 +3031,26 @@ body {
     width: 100% !important;
   }
 }
+.cid-qGyjD9lweG {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #2e2e2e;
+}
 .cid-qyGOLuczLG {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #232323;
+}
+.cid-qyGOLuczLG .mbr-header .mbr-header__text {
+  text-align: center;
+  color: #fff;
+}
+.cid-qyGOLuczLG .mbr-header .mbr-header__subtext {
+  text-align: center;
+  color: #fff;
+}
+.cid-qyGOLuczLG .mbr-article {
+  color: #fff;
 }
 .cid-qyGuYb57YT {
   padding-top: 90px;
