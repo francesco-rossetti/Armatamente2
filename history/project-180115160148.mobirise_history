@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Armatamente2.0",
-    "currentPage": "ilprogetto.html",
+    "currentPage": "lescuole.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -2300,7 +2300,7 @@
     "lescuole.html": {
       "settings": {
         "meta_descr": "Website Creator Description",
-        "title": "lescuole",
+        "title": "leScuole",
         "order": 1
       },
       "components": [

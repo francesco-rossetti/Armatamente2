@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Armatamente2.0",
-    "currentPage": "ilprogetto.html",
+    "currentPage": "lescuole.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -35,7 +35,7 @@
     "uniqCompNum": 77,
     "versionPublish": "4.5.2",
     "publishType": "local",
-    "publishPath": "@PROJECT_PATH@"
+    "publishPath": "file:///C:/Users/fraro/Desktop/Armatamente"
   },
   "pages": {
     "index.html": {
