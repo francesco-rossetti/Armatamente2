@@ -38,7 +38,7 @@
     "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png",
     "publishType": "local",
-    "publishPath": "file:///C:/Users/fraro/OneDrive/Documents/Armatamente2"
+    "publishPath": "file:///C:/Users/fraro/OneDrive/Documents"
   },
   "pages": {
     "index.html": {
