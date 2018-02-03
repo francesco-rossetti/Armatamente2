@@ -244,6 +244,13 @@ function testing(id) {
 	if (origX[id] == posx && origY[id] == posy) {
 		ShowAnswer(id);
 	}
+	else
+	{
+		var AllHide = document.getElementsByClassName("Hide");
+		for (var i = 0; i < AllHide.length; i++) {
+			AllHide[i].style.display = "none";
+		}
+	}
 }
 function CheckAnswer(ID) {
     var Numb = ID.id.substr(ID.id.length - 1)
@@ -269,6 +276,12 @@ function CheckAnswer(ID) {
 		var Father=document.getElementById(Numb);
 		//alert(Numb);
 		Father.lastChild.setAttribute("onmousedown", "");
+		if(Corrq==12)
+		{
+			// DO SOMETHING BUT I CAN'T REMEMBER WHAT
+			//It should be a response to a page, but i can't find the right image, so GO FUCK YOURSELF...
+			alert("VINTO!!!!!!!! (IMMAGINA UN'IMMAGINE DI VITTORIA NELLA TUA MENTE, FUNZIONE IN VIA DI SVILUPPO");
+		}
     }
     else {
 		alert("Risposta sbagliata!");
