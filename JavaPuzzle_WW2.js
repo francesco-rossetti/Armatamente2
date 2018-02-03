@@ -253,7 +253,15 @@ function testing(id) {
 	}
 }
 function CheckAnswer(ID) {
-    var Numb = ID.id.substr(ID.id.length - 1)
+	var Numb;
+	if(ID.id.length==4)
+	{
+	Numb = ID.id.substr(ID.id.length - 1)
+	}
+	else
+	{
+	Numb = ID.id.substr(ID.id.length - 2)
+	}
     var div = document.getElementById("AnswerDivid" + Numb);
     var Radio = div.getElementsByTagName("INPUT");
     //alert(Radio.length);

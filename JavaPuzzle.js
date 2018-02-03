@@ -68,7 +68,7 @@ pdf11="pdf/WW1_Valiant Hearts.pdf";
 
 answ12 = "La descrizione dell’Uniforme utilizzata ai tempi riferisce di una giubba solitamente larga «ma in modo che acconci con garbo alla persona».Come descriveresti il tipo di soldato mostrato dall’uniforme?";
 q12 = ["Si tratta del classico soldato dell’immaginario collettivo: uniforme verde, comoda, ampia.","Si tratta di un soldato moderno e alla moda.", "Si tratta di un soldato ancora legato ad antiche tradizioni di guerra.", "L’uniforme non è importante ai fini della vittoria."];
-c12 = "Si tratta del classico soldato dell’immaginario collettivo: uniforme verde, comoda, ampia."
+c12 = "Si tratta del classico soldato dell’immaginario collettivo: uniforme verde, comoda, ampia.";
 im12 = "puzzle1/im12.jpg";
 pdf12="pdf/WWI_Prima_Guerra_Mondiale_Uniformi_Militari.pdf";
 
@@ -253,7 +253,15 @@ function testing(id) {
 	}
 }
 function CheckAnswer(ID) {
-    var Numb = ID.id.substr(ID.id.length - 1)
+	var Numb;
+	if(ID.id.length==4)
+	{
+	Numb = ID.id.substr(ID.id.length - 1)
+	}
+	else
+	{
+	Numb = ID.id.substr(ID.id.length - 2)
+	}
     var div = document.getElementById("AnswerDivid" + Numb);
     var Radio = div.getElementsByTagName("INPUT");
     //alert(Radio.length);
