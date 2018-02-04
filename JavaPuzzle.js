@@ -111,6 +111,7 @@ function Genera() {
 		Form.appendChild(mybr);
 		var PDF=document.createElement("a");
 		PDF.href=AllPdf[i];
+		PDF.target="_blank";
 		PDF.innerHTML="Vedi scheda di analisi";
 		Form.appendChild(PDF);
 		mybr =document.createElement('br');
