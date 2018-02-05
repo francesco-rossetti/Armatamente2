@@ -285,7 +285,7 @@ function CheckAnswer(ID) {
 		var Father=document.getElementById(Numb);
 		//alert(Numb);
 		Father.lastChild.setAttribute("onmousedown", "");
-		if(Corrq==12)
+		if(CorrQ==12)
 		{
 			// DO SOMETHING BUT I CAN'T REMEMBER WHAT
 			//It should be a response to a page, but i can't find the right image, so GO FUCK YOURSELF...
