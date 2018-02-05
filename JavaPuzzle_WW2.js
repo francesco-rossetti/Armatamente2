@@ -287,9 +287,7 @@ function CheckAnswer(ID) {
 		Father.lastChild.setAttribute("onmousedown", "");
 		if(CorrQ==12)
 		{
-			// DO SOMETHING BUT I CAN'T REMEMBER WHAT
-			//It should be a response to a page, but i can't find the right image, so GO FUCK YOURSELF...
-			alert("VINTO!!!!!!!! (IMMAGINA UN'IMMAGINE DI VITTORIA NELLA TUA MENTE, FUNZIONE IN VIA DI SVILUPPO");
+			window.location.href = 'puzzle2_vittoria.html';
 		}
     }
     else {
