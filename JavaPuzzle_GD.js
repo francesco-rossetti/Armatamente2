@@ -82,7 +82,7 @@ AllIm = [im1, im2,im3,im4,im5,im6,im7,im8,im9,im10,im11,im12];
 AllQ = [q1, q2, q3,q4,q5,q6,q7,q8,q9,q10,q11,q12];
 AllC = [c1, c2, c3,c4,c5,c6,c7,c8,c9,c10,c11,c12];
 AllPdf=[pdf1,pdf2,pdf3,pdf4,pdf5,pdf6,pdf7,pdf8,pdf9,pdf10,pdf11,pdf12];
-
+Old="";
 // Evt--> Events
 var CorrQ = 0;
 var Piece = document.getElementsByClassName('movil'); //Add on img
@@ -184,6 +184,14 @@ function SelectElement(evt) {
 	currentPosx = parseFloat(elementSelect.getAttribute("x"));
 	currentPosy = parseFloat(elementSelect.getAttribute("y"));
 	elementSelect.setAttribute("onmousemove", "MoveElement(evt)");
+	if(Old!="")
+	{
+		if(Old.getAttribute("onmousedown")!="")
+			{
+				Old.setAttribute("x", Math.floor((Math.random() * 500) + 1));
+				Old.setAttribute("y", Math.floor((Math.random() * 409) + 1));
+			}
+	}
 }
 
 function MoveElement(evt) {
@@ -248,10 +256,13 @@ function testing(id) {
 	var posx = parseFloat(Father.firstChild.getAttribute("x"));
 	var posy = parseFloat(Father.firstChild.getAttribute("y"));
 	if (origX[id] == posx && origY[id] == posy) {
+    	Old=Father.lastChild;
+		alert("Rispondere alla domanda mostrata sotto il puzzle");
 		ShowAnswer(id);
 	}
 	else
 	{
+		Old="";
 		var AllHide = document.getElementsByClassName("Hide");
 		for (var i = 0; i < AllHide.length; i++) {
 			AllHide[i].style.display = "none";
@@ -307,6 +318,7 @@ function CheckAnswer(ID) {
 function ShowAnswer(Im) {
     var AllHide = document.getElementsByClassName("Hide");
     for (var i = 0; i < AllHide.length; i++) {
+    	alert("Rispondi alla domanda per completare il puzzle");
         AllHide[i].style.display = "none";
     }
 	var div = document.getElementById("AnswerDivid" + Im);
